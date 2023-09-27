@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>DOM | METHODS </title>
+</head>
+<body>
+    <p class="a">HTML</p>
+    <p class="a">CSS</p>
+    <p class="a">BS</p>
+    <p class="a">JS</p>
+
+    <ul>
+        <li>AEC</li>
+        <li>ACET</li>
+        <li>ACOE</li>
+    </ul>
+
+    <script>
+        let b=document.getElementsByClassName("a");
+        console.log(b);
+        b[0].innerHTML='hyper text markup language';
+        b[2].innerHTML='boot strap';
+
+        b[0].style.color='red';
+        b[1].style.color='blue';
+        b[2].style.color='green';
+        b[3].style.color='orange';
+
+
+        //----->ul tags
+        let c=document.getElementsByTagName('li');
+        console.log(c)
+        c[0].innerHTML='Aditya Engineering College';
+
+    </script>
+</body>
+</html>

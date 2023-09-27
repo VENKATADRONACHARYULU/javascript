@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>some Method</title>
+</head>
+<body>
+    <h2>Some Method</h2>
+    <p>This methods returns the boolena value with check all the values then it return after iteration.</p>
+    <script>
+        let student_emails=['a@gmail.com','b@gmail.com','c@gmail.com'];
+        let exist_mailornot=student_emails.some(function(email,i,index)
+        {
+            return email == 'b@gmail.com';
+        })
+        console.log(exist_mailornot);
+
+    </script>
+</body>
+</html>

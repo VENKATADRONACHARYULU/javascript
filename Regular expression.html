@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Regular Expression</title>
+</head>
+<body>
+
+    <span id="success"></span>
+    <script>
+        let a=/batch/;
+        let output=a.test('fullstack batch');
+        console.log(output);
+
+        //case sensitivity
+        let b=/batch/i;
+        let output1=b.test('fullstack Batch');
+        console.log(output1);
+
+        let c=/^b/;
+        let output2=c.test('batch');
+        let output3=c.test('mbatch');
+        console.log(output2);
+        console.log(output3);
+
+        //Number
+        let d=/^[0-9]{10}/
+        output4=d.test('9205698741'); // correct ==> true
+        output5=d.test('920569874523541254541'); // wrong ==> true
+        console.log(output4);
+        console.log(output5);
+        // if(output4 == true){
+        //     alert('correct')
+        // }
+        // else{
+        //     alert('wrong')
+        // }
+
+        let e=/^[0-9]{10}$/;
+        let n='9704512565';
+        output6=e.test('n');
+        console.log(output6);
+
+
+    </script>
+</body>
+</html>

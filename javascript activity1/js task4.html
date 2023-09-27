@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task4</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const array=[1,2,3,4,5,6,7,8,9,10];
+		var i=0,odd_sum=0,even_sum=0;
+		document.write("Given array<br><br>")
+		for(i=0;i<array.length;i++){
+			document.write(array[i]+" ")
+			if(array[i]%2==0){
+				even_sum+=array[i];
+			}
+			else{
+				odd_sum+=array[i];
+			}
+		}
+		document.write("<br><br>Even sum of the Given array is:"+even_sum+"<br><br");
+		document.write("<br><br>Odd sum of the Given array is:"+odd_sum+"<br><br");
+	</script>
+</body>
+</html>

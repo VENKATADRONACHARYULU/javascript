@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>class</title>
+</head>
+<body>
+    <script>
+        class student
+        {
+            constructor(rno,name,branch,firstname,lastname)
+            {
+                this.Rollno=rno;
+                this.Name=name;
+                this.Branch=branch;
+            }
+        }
+        let obj=new student(566,'Drona','CSE')
+        console.log(obj.Rollno,obj.Name,obj.Branch)
+
+        let trainee=new student(1234,'Dhruv','CSE')
+        console.log(trainee.Rollno,trainee.Name,trainee.Branch)
+        console.log(trainee.getfullname())
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form Validation</title>
+    <script>
+        function validateForm() {
+            // Get input values
+            var username = document.getElementById("username").value;
+            var mobile = document.getElementById("mobile").value;
+            var email = document.getElementById("email").value;
+
+            // Validation checks
+            if (username === "") {
+                alert("Please enter a username.");
+                return false;
+            }
+
+            if (mobile === "" || isNaN(mobile) || mobile.length !== 10) {
+                alert("Please enter a valid 10-digit mobile number.");
+                return false;
+            }
+
+            if (email === "" || !email.includes("@")) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            return true; // Form is valid
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required><br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

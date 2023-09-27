@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>String Tasks</title>
+</head>
+<body>
+	<h2> String Tasks </h2>
+	<table border="1">
+		<tr>
+			<td>P</td>
+			<td>R</td>
+			<td>O</td>
+			<td>G</td>
+			<td>R</td>
+			<td>A</td>
+			<td>M</td>
+			<td>M</td>
+			<td>S</td>
+			<td>&nbsp</td>
+			<td>H</td>
+			<td>U</td>
+			<td>B</td>
+
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+			<td>11</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>-13</td>
+			<td>-12</td>
+			<td>-11</td>
+			<td>-10</td>
+			<td>-9</td>
+			<td>-8</td>
+			<td>-7</td>
+			<td>-6</td>
+			<td>-5</td>
+			<td>-4</td>
+			<td>-3</td>
+			<td>-2</td>
+			<td>-1</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		function getstr(str)
+		{
+			document.write("<b>"+str+"<b><br>");
+		}
+
+		let name= 'Programms Hub';
+		getstr(name);
+		
+		//substr() method
+		getstr('substr method='+name.includes('Hub'));
+		
+		//substring methods
+		getstr('substring of string=' +name.substring(1,5));
+
+		//replace method
+		getstr('replace of method='+name.replace('hub','job'));
+
+		//search method
+		getstr('search method='+name.search('hub'));
+
+		//lowercase method
+		getstr("To Lower Case="+name.toLowerCase());
+
+		//uppercase method
+		getstr("To Upper Case ="+name.toUpperCase());
+
+		//indexof method
+		getstr("Index of = "+name.indexOf('b'));
+
+		//includes method
+		getstr('includes method='+name.includes('cal'));
+
+		//slice method
+		getstr('slice of string=' +name.slice(1,6));
+
+		//concat method
+		let name2='Drive Ready';
+		getstr('Concatenation=' +name.concat(name2));
+
+		//lastindexof method
+		getstr("Last Index of string ="+name.lastIndexOf('H'));
+
+		//charCodeAt method
+		getstr('Char code at='+name.charCodeAt(10));
+
+		//charAt method
+		getstr('Char at ='+name.charAt(6));
+
+		//trim method
+		getstr('Trim Method='+name.trim());
+
+		//valueof method
+		getstr('Value Of Method=' +name.valueOf());
+
+		//split method
+		let name3= 'Drona&Kelvin';
+		getstr('split method='+name3.split('&'));
+
+		//toString() method
+		let num= '42';
+		getstr('Tostring method='+num.toString());
+
+		let match = 'Hub';
+		getstr('Match method='+name.match(match));
+
+	</script>
+</body>
+</html>

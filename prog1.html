@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript</title>
+</head>
+<body>
+	<h1> Java Script </h1>
+	<script>
+		var obj = [{
+			'name':'hari',
+			'rollno':1234,
+			'college':'AEC',
+			'branch':'CSE'
+		},
+		{
+			'name':'Kiran',
+			'rollno':4321,
+			'college':'ACET',
+			'branch':'IT',
+
+		},
+		{
+			'name':'Harish',
+			'rollno':5678,
+			'college':'ACOE',
+			'branch':'ECE',
+
+		},
+		{
+			'name':'Dinesh', 
+			'rollno':8765,
+			'college':'PolyTechnic',
+			'branch':'Mech',
+
+		}
+		]
+		for (var i=0;i<obj.length;i++){
+	      for (var key in obj[i]){
+	        document.write(obj[i][key]+' ')
+	      }
+	      document.write('<br>')
+	    }
+		// console.log(obj[0].name);
+		// console.log(obj[1].name);
+
+		// console.log(obj[0].rollno);
+		// console.log(obj[1].rollno);
+
+		// console.log(obj[0].college);
+		// console.log(obj[1].college);
+
+		// console.log(obj[0].branch);
+		// console.log(obj[1].branch);
+
+		// console.log(obj.rollno);
+		// console.log(obj.college);
+		// console.log(obj.branch);
+		// console.log(obj['name','rollno','college','branch'])
+	</script>
+
+</body>
+</html>

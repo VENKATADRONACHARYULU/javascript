@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Datatypes</title>
+</head>
+<body>
+	<h1> Different Kinds of Datatypes </h1>
+	<br>
+	<h2>Primitive Datatypes</h2>
+	<script type="text/javascript">
+		let age = 7;
+		let name = "Avenger";
+		let bool = true;
+		let emptyValue = null;
+		let undefinedValue;
+
+		document.write("Number:", age);
+		document.write("<br>");
+		document.write("String:", name);
+		document.write("<br>");
+		document.write("Boolean:", bool);
+		document.write("<br>");
+		document.write("Null:", emptyValue);
+		document.write("<br>");
+		document.write("Undefined:", undefinedValue);
+		document.write("<br>");
+
+	</script>
+
+	<h2>Non Primitive Datatypes</h2>
+	<script type="text/javascript">
+		let details = {
+		  firstName: "MS",
+		  lastName: "Dhoni",
+		  age: 42
+		};
+		let cricket = ["Sachin Tendulkar", "Rahul Dravid", "Saurav Ganguly"];
+		function greet(name) {
+		  return "Hello, " + name + "!";
+		}
+
+		document.write("Object:", details.firstName, details.lastName, details.age);
+		document.write("<br>");
+		document.write("Array:", cricket);
+		document.write("<br>");
+		document.write("Function:", greet("Chandrayaan-3"));
+		document.write("<br>");
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>array map method</title>
+</head>
+<body>
+    <script>
+        // let friends=['Drona','pradeep','anudeep'];
+        // let names= friends.map(function(ele)
+        // {
+        //     console.log(ele);
+        // })
+
+        let trainees1=
+        [
+            {
+                'name':'Dhruv',
+                'rollno':'1234'
+            },
+            {
+                'name':'Kanna',
+                'rollno':'4567'
+            }
+        ];
+        trainees1.map(function(individual_trainee,i,arr)
+        {
+            console.log(individual_trainee.name+" "+individual_trainee.rollno)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>  
+<head> Javascript Events </head>  
+<body onload="window.alert('Page successfully loaded');">
+<script language="Javascript" type="text/Javascript">   
+    function clickevent()  
+    {  
+        document.write("This is JavaTpoint");  
+    }  
+    function mouseoverevent()  
+    {  
+        alert("This is JavaTpoint");  
+    }  
+    function keydownevent()  
+    {  
+        document.getElementById("input1");  
+        alert("Pressed a key");  
+    }  
+    <!--  
+document.write("The page is loaded successfully");  
+</script>   
+<form>  
+<input type="button" onclick="clickevent()" value="Who's this?"/>
+<p onmouseover="mouseoverevent()"> Keep cursor over me</p>  
+<input type="text" id="input1" onkeydown="keydownevent()"/>  
+</form>  
+</body>  
+</html>  

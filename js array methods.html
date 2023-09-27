@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array methods</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("ARRAY METHODS:<br><br>");
+		function fun(num){
+			if(num>0) return num;
+		}
+		function fun2(item,index){
+			document.write(index+":"+item+"<br>");
+		}
+		function fun3(total,num){
+			return total-num;
+		}
+		function checkval(num){
+			if(num>0) return num;
+		}
+		function display1(val){
+			document.write("<b>"+val+"<br>");
+		}
+		const array1=['200','50','-1','-500','75'];
+		const array2=['drona','kelvin','manoj','prasanth','dary','nani'];
+		document.write("array1 :"+array1+"<br>");
+		document.write("array2 :"+array2+"<br><br>");
+		const array3=array1.map(fun);
+		display1("1)Using Map method :"+array3);
+		const array4=array1.filter(checkval);
+		display1("2)Using filter method :"+array4);
+		const array5=array1.sort();
+		display1("3)Using sort method :"+array5);
+		display1("4)Using forEach method :");
+		array2.forEach(fun2);
+		display1("5)Using concat method :"+array1.concat(array2));
+		display1("6)Using Every method :"+array1.every(checkval));
+		display1("7)Using some method :"+array1.some(checkval));
+		display1("8)Using includes method :"+array1.includes('-90'));
+		display1("9)Using join method :"+array2.join(' and '));
+		display1("10)Using reduce method :"+array1.reduce(fun3));
+		display1("11)Using find method :"+array1.find(fun));
+		display1("12)Using FindIndex method :"+array1.findIndex(fun));
+		display1("13)Using indexOf method :"+array2.indexOf("kalyan"));
+		display1("14)Using slice method :"+array2.slice(2,6));
+		display1("16)Using reverse method :"+array2.reverse());
+		display1("17)Before using push method array2 :"+array2);
+		array2.push("Ram");
+		display1("&nbsp &nbsp &nbsp After using push method array2 :"+array2);
+		display1("18)Before using pop method array2 :"+array2);
+		array2.pop();
+		display1("&nbsp &nbsp &nbsp After using push method array2 :"+array2);
+		display1("19)Before using unshift method array2 :"+array2);
+		array2.unshift("Ram");
+		display1("&nbsp &nbsp &nbsp After using unshift method array2 :"+array2);
+		display1("20)Before using shift method array2 :"+array2);
+		array2.shift();
+		display1("&nbsp &nbsp &nbsp After using shift method array2 :"+array2);
+	</script>
+</body>
+</html>

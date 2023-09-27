@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title> find() method</title>
+</head>
+<body>
+    <h2> Find Method</h2>
+    <p> This method returns the value when condition is satisfied then exist from the iteration lopp.</p>
+
+    <script>
+        let names=['dhruv','kanna','chanti'];
+        let getonename=names.find(function(name)
+        {
+            return name.startsWith('d');
+        })
+
+        ///or
+        //function inside the function
+
+        // names.find(test)
+        // let getonename=function test(name)
+        // {
+        //     return name.startsWith('d');
+        // }
+         console.log(getonename);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task7</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var n=prompt("Enter a Number");
+		var a=parseInt(n);
+		var temp=a;
+		var ans=0;
+		var rem=0;
+		while(temp>0){
+			rem=parseInt(temp%10);
+			ans=ans*10+rem;
+			temp=parseInt(temp/10);
+		}
+		if(a==ans){
+			document.write("Given Number "+a+" is Palindrome");
+		}
+		else{
+			document.write("Given Number "+a+" is Not a Palindrome");
+		}
+	</script>
+</body>
+</html>

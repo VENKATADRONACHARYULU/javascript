@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const tableElement = document.createElement("table");
+		tableElement.setAttribute("border", "1");
+
+		for (let i = 0; i < 3; i++) 
+		{
+  		const rowElement = document.createElement("tr");
+	  		for (let j = 0; j < 3; j++) 
+	  		{
+	    	const cellElement = document.createElement("td");
+	    	cellElement.innerHTML = i * 3 + j + 1;
+	    	rowElement.appendChild(cellElement);
+	  		}
+  		tableElement.appendChild(rowElement);
+		}
+		document.body.appendChild(tableElement);
+	</script>
+
+</body>
+</html>

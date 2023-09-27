@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>class</title>
+</head>
+<body>
+    <script>
+        class student{
+            constructor(firstname,lastname){
+                this.firstname=firstname;
+                this.lastname=lastname;
+                this.getfullname=function(){
+                    return this.firstname+" "+this.lastname
+                }
+            }
+        }
+        let obj=new student('DV','Drona');
+        console.log(obj.getfullname())
+    </script>
+</body>
+</html>
